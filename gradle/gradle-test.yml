@@ -1,4 +1,3 @@
-# Config from own experience and https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
 name: Run Gradle Tests
 # Runs all Unit/Integration tests in the current gradle project using the gradle wrapper.
 #   Includes cache for reusable components.
