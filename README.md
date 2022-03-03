@@ -1,6 +1,6 @@
 # Github Actions samples
 
-## What is Github Actions?
+## What are Github Actions?
 
 To summarize, Github Actions allow you to run certain **actions** like automatically running Unit/Integration tests, deploying software to servers, building software for distribution and more as a reaction to **Github** events like PR merges or pushes. That's where the name comes from.
 
