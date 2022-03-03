@@ -1,0 +1,25 @@
+name: Run Tests
+# Runs all Unit/Integration tests in the current .NET Core solution
+
+on:
+  pull_request:
+    branches: [ main, branch1 ]
+  # limit trigger to specified branches
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        # modify version if required
+        dotnet-version: 5.0.102
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build Solution
+      run: dotnet build --configuration Release --no-restore
+    - name: Run tests
+      run: dotnet test --no-restore --verbosity normal
