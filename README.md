@@ -38,4 +38,3 @@ The following provide a good starting place for deployments and test execution:
 
 I hope that these samples will help you improve and automate your workflows and, in the end, write better, cleaner code faster.
 I'd be happy to hear your feedback and help you with questions.
-Contact me via the CSDC Discord!
